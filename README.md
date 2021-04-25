@@ -31,8 +31,8 @@
 
 사례
 + [Google](www.google.co.kr)에 <html lang="ko">가 적용되어 있는 모습
-    ![3.1.1 example 01](assets/3_1_1_ex01.png)
-
+    ![3.1.1 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/assets/3_1_1_ex01.PNG)
+	
 ### 3.1.2 Language of Parts
 > (Level AA) 고유명사, 기술 용어, 알 수 없는 언어의 단어, 주변 텍스트의 언어에 포함된 단어나 구절을 제외하고, 콘텐츠에 포함된 각 구절의 언어를 프로그래밍 방식으로 확인할 수 있다.
 
