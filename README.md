@@ -29,7 +29,7 @@
 과 같이 작성해주어야 한다.
 두 가지 이상의 언어로 구성된 웹 페이지의 경우, 대부분의 내용이나 주된 컨텐츠의 언어를 따른다.
 
-사례
+사례  
 + [Google](www.google.co.kr)에 &lt;html lang="ko"&gt;가 적용되어 있는 모습
     ![3.1.1 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/assets/3_1_1_ex01.PNG)
 
