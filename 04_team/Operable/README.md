@@ -356,6 +356,8 @@
 
 * 스마트폰을 흔들면 긴급 상황을 전송하는 app 으로 모션 인식을 통해 바로 위험상황을 전송 가능하다.
 
+![image](https://user-images.githubusercontent.com/41986911/115984483-42646600-a5e2-11eb-905a-3c9ff8d6673c.png)
+
 출처 : https://www.youtube.com/watch?v=q3VCPRCdfhc
 
 ### 2.5-5 타켓 크기
