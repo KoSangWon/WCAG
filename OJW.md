@@ -117,8 +117,16 @@
 * 다중 포인트나 경로 기반 제스처를 사용해 조작하는 모든 기능은 필수적인 경우가 아니면 경로 기반 제스처 없이 단일 포인터로 조작이 가능하다.
 * 만약 두 손가락이나 복잡한 움직임이 필요한 제스처의 경우 손 떨림이 있거나 움직임이 제한적인 사람들은 조작하기 어렵다.
 * 한 번의 터치만으로 조작이 가능하다면, 인지 기능 장애가 있는 사람 또한 기억하고 사용하기 쉽다.
+#### 예제1. 입으로 들이키고 부는 동작으로 게임을 하는 Sphincter Envy
+* 입 천장의 혀 작동 시스템을 이용하는 사용자는 복잡한 제스처를 사용하기 어렵다. 따라서 멀티 터치 제스처를 사용하는 경우에는 이를 대체하는 간단한 인터페이스를 제공해야 한다.
+![image](https://user-images.githubusercontent.com/41986911/115981690-96fee580-a5d0-11eb-8497-b2b71a0ab803.png)  
+
+![image](https://user-images.githubusercontent.com/41986911/115981683-7fbff800-a5d0-11eb-821e-47b79c2246f1.png)
 
 
+출처 : https://www.youtube.com/watch?v=4mp6dtp1mJ8&t=30s  
+출처 : https://a11y.gitbook.io/wcag/2-operable/2.5-input-modalities#2-5-1-a
+출처 : https://zdnet.co.kr/view/?no=20120301072627
 출처 - https://www.google.co.kr/maps/
 출처 - http://idangero.us/swiper/
 #### 2.5-2 포인터 취소
@@ -132,8 +140,16 @@
 * 텍스트 또는 텍스트 이미지를 포함한 레이블이 있는 사용자 인터페이스 구성요소의 이름은 볼 수 있는 텍스트를 포함해야 한다.
 * 시각적으로 드러난 레이블은 텍스트 이름이 되어야 한다. **프로그램 방식**으로 결정된 텍스트 이름은 화면에 드러난 레이블을 통해서 음성 명령으로 접근 가능하다.
     * 프로그램 방식 : label/for, aria-lablledby, aria-lable 과 같이 프로그램을 통해 텍스트의 이름을 의미있게 결정해주는 방식을 이야기 한다.
+    * 접근 가능한 이름 : 보조 기술(스크린 리더등)에서 사용자에게 들리는 텍스트, 음성 인식 소프트웨어의 사용자가 말하는 음성 명령 실행 등을 이야기 한다.
 
-예시: https://dev.opera.com/
+#### 예제1. 아이폰 구매
+* 아래와 같이 그저 쇼핑하기, 구입하기 로만 이름이 구성된 경우 비장애인의 경우 이미지와 핸드폰 사진을 보며 원하는 버튼을 클릭이 가능하지만, 시각 장애인의 경우 어떤 핸드폰이 매칭되는지 알 수 없다.
+![image](https://user-images.githubusercontent.com/41986911/115981612-f1e40d00-a5cf-11eb-8434-7db534d62e15.png)
+* 따라서 아래와 같이 접근 가능하도록 설정해줘야 한다.
+![image](https://user-images.githubusercontent.com/41986911/115981630-1344f900-a5d0-11eb-8934-96e2921e0767.png)
+
+출처 : https://www.apple.com/kr/iphone/  
+출처 : https://a11y.gitbook.io/wcag/2-operable/2.5-input-modalities
 
 ### 2.5-4 모션기반 작동
 * 장치 모션이나 사용자 모션으로 조작할 수 있는 기능은 사용자 인터페이스 구성 요소로 동작 가능해야 한다. 
@@ -170,14 +186,18 @@
 출처 : https://developer.android.com/design?hl=ko
 
 #### 예제 개발자 문서 (apple, google)
-출처 - https://developer.apple.com/
-출처 - https://developers.google.com/     
+출처 : https://developer.apple.com/
+출처 : https://developers.google.com/     
 
 ### 2.5-6 동시 입력 메커니즘
-* 제한이 필수적, 콘텐츠의 보안을 보장, 사용자 설정을 유지해야 하는 경우를 제외하고 웹 콘텐츠는 플랫폼에서 사용할 수 있는 입력 방식의 사용을 제한하지 않는다.
-* 사용자의 경우 다양한 입력 장치를 사용 할 수 있음을 보장받아야 한다. 
-* 한 사용자가 터치 입력을 실행했다고 해서 그 이외의 방식을 사용하지 않을것으로 생각해서는 안 된다.
-
+* 웹 콘텐츠는 제한이 필수적인 경우(콘텐츠 보안 보장, 사용자 설정을 침해하면 안되는 경우를 제외하고) 플랫폼에서 사용할 수 있는 입력 방식을 제한해서는 안 된다.
+* 사용자는 콘텐츠 작업 중 다른 입력장치로의 전환이 가능해야 한다. (음성 입력을 사용하거나 키보드를 연결해서 사용할 수 있어야 한다.)
+   * 음성 입력 사용자의 경우 개인 정보 보호를 위해서 키보드로 전환하는것을 선호 할 수도 있다.
+   * 키보드와 터치 스크린을 제공하는 경우 하나의 화면에서 다른 화면으로의 전환 또한 가능하다.
+* 따라서 개발자는, 사용자의 다양한 방식을 고려하고 연구해 개발해야 한다.
+* 하지만 위에 서술한 바와 같이, 필수적으로 제한이 필요한 경우에는 성공 기준에 해당하지 않는다. 
+   * 예) ![image](https://user-images.githubusercontent.com/41986911/115981538-8a2dc200-a5cf-11eb-9e77-e62321331ba6.png)
+출처 : https://play.google.com/store/apps/details?id=com.MyMusicTeacher.MyMusicTeacher&hl=ko&gl=US
 ## what is WCAG Levels?
 
 https://myaccessible.website/blog/wcaglevels/wcag-levels-a-aa-aaa-difference
