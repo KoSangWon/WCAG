@@ -64,7 +64,7 @@ lang 속성을 부분적으로 이용하여 적절한 컨텐츠의 언어로 식
 
 사례
 + [네이버 오늘의 영어 회화](https://learn.dict.naver.com/conversation#/endic/20210424)에서 다른 부분은 lang="ko" 이지만 오늘의 영어 회화의 영어 문장 부분은 span 요소에 data-lang = "en"과 같이 data-lang 속성을 이용해 영어임을 표시하는 모습
-    ![3.1.2 example 01](./assets/3_1_2_ex01.png)
+    ![3.1.2 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/assets/3_1_2_ex01.png)
 
 ### 3.1.3 Unusual Words
 > (Level AAA) 관용구와 전문 용어 등, 보편적이지 않거나 제한된 방식으로 사용된 단어나 구절의 구체적인 정의를 확인하기 위한 메커니즘을 이용할 수 있다.
@@ -128,7 +128,7 @@ not expressing something in human language;
 
 사례  
 + [G-health 공공보건 포털의 희귀질환자 의료비 지원사업 게시글](https://www.g-health.kr/portal/bbs/selectBoardArticle.do?bbsId=U00322&nttId=381807&menuNo=200448&lang=&searchCndSj=&searchCndCt=&searchWrd=&pageIndex=1&vType=Z2)에서 희귀질환자 의료비 지원 사업을 이용할 수 있는 사람들의 조건을 &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt; 요소를 사용해 건강보험가입자가 이용할 수 있다면, 그 건강보험가입자가 무엇을 의미하는 지 등을 설명하여 각 단어의 뜻을 명확히 표현한다.
-    ![3.1.3 example 01](./assets/3_1_3_ex01.png)
+    ![3.1.3 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/assets/3_1_3_ex01.png)
 
 ### 3.1.4 Abbreviations
 >(Level AAA) 약어의 확장된 형태나 의미를 확인하는 매커니즘을 이용할 수 있다.
@@ -174,7 +174,7 @@ not expressing something in human language;
 
 사례
 + [위키피디아](https://en.wikipedia.org/wiki/World_Wide_Web)에서 V, T, E라고 임의로 정한 약어를 사용할 때 &lt;abbr&gt; 태그를 이용하여 V가 vies this template, T가 Discuss this template, E가 Edit this template의 의미로 사용되었음을 알려주고 있다. 마우스 커서를 가져다 댔을 때 title 속성에 의해 의미가 보여지며 스크린 리더를 사용했을 때도 약어의 의미를 알 수 있다. 
-    ![3.1.4 example 01](./assets/3_1_4_ex01.png)
+    ![3.1.4 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/assets/3_1_4_ex01.png)
 
 ### 3.1.5 Reading Level
 > (Level AAA) 고유명사와 제목을 제외하고 텍스트를 이해하는 데 중등 교육(중학교) 수준 이상의 독해력이 필요한 경우 이를 보완하는 콘텐츠 또는 그러한 독해력이 필요하지 않은 버전을 이용할 수 있다.
@@ -199,7 +199,7 @@ not expressing something in human language;
 
 사례  
 + [우리은행 웹접근성 안내](https://spot.wooribank.com/pot/Dream?withyou=CQIBG0050)를 보면 센스리더 설치 및 설정 안내부터 음성출력 속도 조절하기, 가상 커서 설정하기 등의 도움말에 이해를 돕는 추가적인 스크린샷 이미지를 제공한다. 또한 짧고 정확한 문장으로 각 단계를 설명하고 있으며 각 단계에 번호를 부여하여 텍스트를 읽기 쉽게 작성한 것을 볼 수 있다.
-    ![3.1.5 example 01](./assets/3_1_5_ex01.png)
+    ![3.1.5 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/assets/3_1_5_ex01.png)
 
 ### 3.1.6 Pronunciation
 >(Level AAA) 발음을 모르면 문맥에서 단어의 의미가 모호한 경우 단어의 구체적인 발음을 확인하는 매커니즘을 이용할 수 있다.
@@ -248,7 +248,7 @@ not expressing something in human language;
   
 사례  
 + [대한항공 드롭메뉴](https://www.koreanair.com/kr/ko)를 보면 현재 운송 제한 물품에 포커스가 가 있지만 새 창이 열리거나 다른 구성 요소로 변경되고 있지 않다. 포커스가 가 있는 상태에서 클릭 혹은 스페이스 바, 엔터 키 등을 사용해야 다음 작업이 일어난다.
-    ![3.2.1 example 01](./assets/3_2_1_ex01.png)
+    ![3.2.1 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/assets/3_2_1_ex01.png)
 
 
 ### 3.2.2 On Input
@@ -289,10 +289,10 @@ not expressing something in human language;
 
 사례  
 + [네이버 로그인 폼](https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com)을 보면 로그인 버튼이 submit으로 제출 버튼으로 제공되어 문맥 변화를 예측할 수 있다.
-    ![3.2.2 example 01](./assets/3_2_2_ex01.png)
+    ![3.2.2 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/assets/3_2_2_ex01.png)
 
 + [이케아 언어변경 탭](https://www.ikea.com/kr/ko/)을 보면 언어 변경을 선택하여 문맥에 변경이 생기기 전에, aria-label 속성을 이용해 원하시는 언어를 선택하세요라는 정보를 주어 언어를 변경하면 변경 사항이 생길 것임을 예측할 수 있게 한다.
-    ![3.2.2 example 02](./assets/3_2_2_ex02.png)
+    ![3.2.2 example 02](https://github.com/HyunJungC-Dev/WCAG/blob/main/assets/3_2_2_ex02.png)
 
 
 ### 3.2.3 Consistent Navigation
@@ -459,8 +459,12 @@ Please re-enter the value.');" />
 + 지침이 길고 장황한 경우, 개별 컨트롤에 초점이 있는 경우에만 지침을 사용하도록 선택하게 할 수도 있다.
 + 너무 많은 정보는 오히려 혼동을 줄 수 있으므로 작업을 수행하기위해 필요한 수준에서 충분한 정보를 제공해야 한다.
 
-이점
-적용방법
+이점  
++ 인지, 언어 및 학습 장애가 있는 사용자를 포함하여 모든 사용자가 정보를 올바르게 입력하는 데 도움이 된다.
++ 명확하고 모호하지 않은 레이블 및 지침을 제공하면, 사용자가 불완전하거나 잘못된 양식을 제출하는 것을 방지하여 제출 오류를 수정하기 위해 페이지 양식을 한번 더 탐색하지 않아도 된다.
+  
+적용방법  
+aria-describedby
 사례
 
 ### 3.3.3 Error Suggestion
@@ -502,23 +506,3 @@ Please re-enter the value.');" />
 이점
 적용방법
 사례
-
-# 4. Robust
-콘텐츠는 보조 기술 등의 다양한 사용자 에이전트를 이용해 확실히 해석할 수 있을 정도로 충분히 견고해야 한다.
-
-## 4.1 Compatible
-보조 기술을 포함해, 현재와 미래의 사용자 에이전트와의 호환성을 극대화한다.
-
-### 4.1.1 Parsing
-> (Level A) 마크업 언어를 이용해 구현한  콘텐츠에서 요소에는 완전한 시작/종료 태그가 있고, 요소의 중첩 구조는 표준에 따라 만들어지며, 요소에 중복된 속성은 포함되지 않는다. 또한 표준에서 허용한 경우를 제외하고, 모든 ID의 값은 고유하다.
-> 가령 닫는 괄호처럼 태그 형성에 필수적인 문자가 빠진 시작/종료 태그나 일치하지 않는 속성 값 물음표는 완전하지 않다.
-
-### 4.1.2 Name, Role, Value
->(Level A) 모든 사용자 인터페이스 컴포넌트(다음 항목을 포함하되 여기에 국한되지 않음: 스크립트로 생성한 폼 요소, 링크, 컴포넌트)에 대해, 이름(name)과 역할(role)을 프로그래밍 방식을 확인할 수 있고, 사용자가 설정할 수 있는 상태(status)와 프로퍼티(properties), 값(values)을 프로그래밍 방식으로 설정할 수 있으며, 이러한 항목들이 변경되었을 때는 보조 기술을 포함한 사용자 에이전트에 알림이 제공된다.
-
-
-### 4.1.3 Status Messages
-> (Level AA) 마크업 언어로 구현된 컨텐츠에서 상태 메시지는 역할이나 속성을 통해 프로그래밍 방식으로 확인할 수 있으므로 포커스를 받지 않고 보조 기술로 사용자에게 제공할 수 있다.
-
-## 참고 자료
-[](https://naradesign.github.io/wcag-2.1.html)
