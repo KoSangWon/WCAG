@@ -464,7 +464,27 @@ Please re-enter the value.');" />
 + 명확하고 모호하지 않은 레이블 및 지침을 제공하면, 사용자가 불완전하거나 잘못된 양식을 제출하는 것을 방지하여 제출 오류를 수정하기 위해 페이지 양식을 한번 더 탐색하지 않아도 된다.
   
 적용방법  
-aria-describedby
+aria-describedby 속성을 이용하여 지침에 대한 설명을 양식 필드와 연결하는 방법이 있다.
+```html
+<button aria-label="Close" aria-describedby="descriptionClose"
+    onclick="myDialog.close()">X</button>
+...
+<div id="descriptionClose">Closing this window will discard any information entered and
+return you back to the main page</div>
+```
+
+양식 내의 관련 컨트롤 집합을 role 속성을 이용하여 그룹으로 표시할 수도 있다.
+```html
+<div role="group" aria-labelledby="ssn1">
+   <span id="ssn1">Social Security#</span> 
+   <span style="color: #D90D0D;"> * </span>
+   <input size="3" type="text" aria-required="true" title="First 3 digits" />-
+   <input size="2" type="text" aria-required="true" title="Next 2 digits" />-
+   <input size="4" type="text" aria-required="true" title="Last 4 digits" />
+</div>
+```
+
+
 사례
 
 ### 3.3.3 Error Suggestion
