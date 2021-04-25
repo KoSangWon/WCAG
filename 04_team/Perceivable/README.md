@@ -31,10 +31,10 @@
   
 - 사례: DAUM 메일
   - DAUM 메일에서는 단축키를 해제할 수 있는 메커니즘을 제공한다.
-  <img src="/images/daum-mail-214.png" width="800">
+  <img src="./images/daum-mail-214.png" width="800">
 
   - DAUM 메일에서 메일을 읽음/읽지 않음 상태로 변환하는 키보드 단축키(`U`)를 눌렀을 때 각 메일에 포커스되어 있지 않으면 작동하지 않고 포커스가 있을 때만 활성화된다.
-  <img src="/images/daum-mail-2-214.png" width="800">
+  <img src="./images/daum-mail-2-214.png" width="800">
 
 ## 2.2 Enough Time
 ### 2.2.1 Timing Adjustable
@@ -68,7 +68,7 @@
 
 - 사례: 대학교 종합정보시스템
   - 연장 속성을 만족하는 사례로 대학교 종합정보시스템 오른쪽 상단에 시간 제한을 연장할 수 있도록 하는 버튼이 존재한다. 또한, 시간이 만료되기 전 사용자에게 경고하여 연장할 수 있도록 알림창으로 도움을 준다. 
- <img src="/images/konkuk-home-221.png" width="800">
+ <img src="./images/konkuk-home-221.png" width="800">
 
 ### 2.2.2 Pause, Stop, Hide
 > (정지 기능 제공) 자동으로 변경되는 콘텐츠는 움직임을 제어할 수 있어야 한다.
@@ -86,7 +86,7 @@
 - 사례: 야후 메인 페이지
   - 야후 메인 페이지에는 자동으로 시작되는 동영상 콘텐츠가 있으며 일시 정지를 할 수 있는 매커니즘이 존재한다.
 <figure>
-  <img src="/images/yahoo-222.png" width="800">
+  <img src="./images/yahoo-222.png" width="800">
 </figure>
 
 ### 2.2.3 No Timing
@@ -97,7 +97,7 @@
 - 사례: 인스타그램 푸시 알림 설정
   - 인스타그램에서 사용자가 임의적으로 푸시 알림(인터럽트)를 제어할 수 있다.
 <figure>
-  <img src="/images/instagram-224.png" width="550">
+  <img src="./images/instagram-224.png" width="550">
 </figure>
 
 ### 2.2.5 Re-authentication
@@ -105,7 +105,7 @@
 - 사례: 유튜브 뮤직 개인 내역
   - 인증 세션이 완료된 후 재인증을 하면 사용자별 정보는 손실 없이 유지 된다.
 <figure>
-  <img src="/images/youtube-225.png" width="550">
+  <img src="./images/youtube-225.png" width="550">
 </figure>
 
 
