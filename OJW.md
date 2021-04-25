@@ -16,14 +16,21 @@
 ### 2.3.3 인터랙션으로 인한 애니메이션 효과 (Level AAA)
 * 애니메이션이 전달되는 정보에 필수적이지 않다면 모션 애니메이션의 비활성화가 가능해야 한다.
 
-#### 2.3.3 예제
-1. 라인 플러스
+#### 예제1. 라인 플러스
 * https://linepluscorp.com/
+
+
+![image](https://user-images.githubusercontent.com/41986911/115982388-8866fd00-a5d5-11eb-94ae-f67b8e35fcf7.png)
 * 라인 플러스의 경우 사이트에 들어가는 순간 사이트의 2/3 이상을 차지하는 배너에서 바로 애니메이션 효과가 시작되고, 이를 비활성화할 수 있는 기능이 제공되지 않고 있다.
 
+#### 예제2. 라인
 2. 라인
 * https://line.me/ko/
+
+
 * 라인 플러스와는 다르게 빠르게 바뀌는 애니메이션 효과는 아니지만, 그다지 필수적인 정보를 제공하는 애니메이션 효과가 아닐 뿐더러 마찬가지로 비활성화 기능을 제공하고 있지 않다.
+
+![image](https://user-images.githubusercontent.com/41986911/115982377-7b4a0e00-a5d5-11eb-8022-bac0b8971425.png)
 
 3. MAC 과 Window 에서 설정하기
 * OS 환경에서의 설정으로 이런 애니메이션 효과를 줄일 수 있다.
@@ -46,6 +53,7 @@
 * 메뉴 건너 뛰기 링크를 제공함으로서 반복되는 콘텐츠 블럭을 건너 뛸 수 있도록 할 수 있다. 
 * 네이버 지식 iN 사이트에서 키보드로 접근시에 반복 영역 건너뛰기를 확인 할 수 있다.
 * 하지만 이러한 메뉴는 시각 장애인만 필요한 메뉴가 아니라, 손과 발을 자유롭게 사용할 수 없는 마우스 스틱을 사용하는 사람들에게도 필요하다. 따라서 항상 숨김 처리를 해 놓는 것은 문제가 될 수도 있다.
+
 #### 예제1 지식in
 * 지식인에서 tab 버튼을 누를 경우에 메뉴 건너 뛰기 링크를 제공한다. 이를 통해서 원하는 영역으로 건너 뛰기가 가능해 필요한 내용을 찾기 위해 계속해서 내부 내용들에 접근할 고생이 줄어든다.
 ![건너뛰기](https://user-images.githubusercontent.com/41986911/115980486-19cf7280-a5c8-11eb-9b78-015061de93cb.PNG)
@@ -125,6 +133,7 @@
 * 한 번의 터치만으로 조작이 가능하다면, 인지 기능 장애가 있는 사람 또한 기억하고 사용하기 쉽다.
 #### 예제1. 입으로 들이키고 부는 동작으로 게임을 하는 Sphincter Envy
 * 입 천장의 혀 작동 시스템을 이용하는 사용자는 복잡한 제스처를 사용하기 어렵다. 따라서 멀티 터치 제스처를 사용하는 경우에는 이를 대체하는 간단한 인터페이스를 제공해야 한다.
+
 ![image](https://user-images.githubusercontent.com/41986911/115981690-96fee580-a5d0-11eb-8497-b2b71a0ab803.png)  
 
 ![image](https://user-images.githubusercontent.com/41986911/115981683-7fbff800-a5d0-11eb-821e-47b79c2246f1.png)
@@ -136,10 +145,10 @@
 ![image](https://user-images.githubusercontent.com/41986911/115981916-44bec400-a5d2-11eb-941d-74e32cc56d94.png)
 
 출처 : https://www.youtube.com/watch?v=4mp6dtp1mJ8&t=30s  
-출처 : https://a11y.gitbook.io/wcag/2-operable/2.5-input-modalities#2-5-1-a
-출처 : https://zdnet.co.kr/view/?no=20120301072627
-출처 - https://www.google.co.kr/maps/
-출처 - http://idangero.us/swiper/
+출처 : https://a11y.gitbook.io/wcag/2-operable/2.5-input-modalities#2-5-1-a  
+출처 : https://zdnet.co.kr/view/?no=20120301072627  
+출처 - https://www.google.co.kr/maps/  
+출처 - http://idangero.us/swiper/  
 #### 2.5-2 포인터 취소
 * 싱글 포인터를 사용하여 작동하는 기능은 아래중 하나 이상이 충족되어야 한다.
    1. down 이벤트 사용 X : 포인터의 down 이벤트는 함수 일부를 실행하는데 사용해서는 안 된다.
