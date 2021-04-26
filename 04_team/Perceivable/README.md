@@ -51,11 +51,6 @@
       <td headers="co2 c1">Marie Beauchamp</td>
       ```
 
-  - 네이버 로그인 페이지
-    - `<form>`에서 각 checkbox의 label은 보조 기술에 의해 프로그래밍 방식으로 결정될 수 있다.
-    - `로그인 상태 유지` checkbox에 tab을 통해 이동할 수 있고, space bar를 통해 체크 및 체크 해제가 가능하다.  
-    <img src="./assets/naver_login_page_131.png" width="550">
-
 ### 1.3.2 Meaningful Sequence
 > (의미 있는 순서) 콘텐츠를 표현하는 순서가 콘텐츠의 의미에 영향을 준다면 정확한 읽기 순서를 프로그래밍 방식으로 확인할 수 있어야 한다.
 - 사례
