@@ -316,7 +316,10 @@ not expressing something in human language;
 
 
 사례  
-+ []()
++ [대한항공 상단 탭](https://www.koreanair.com/kr/ko)의 경우 어떤 페이지를 들어가도 항상 같은 위치, 같은 순서로 제공되어 사용자가 각 메뉴의 위치를 예측할 수 있다.
+    ![3.2.3 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/04_team/Understandable/assets/3_2_3_ex01.png)
+
+
 
 ### 3.2.4 Consistent Identification
 > (Level AA) 웹 페이지 내에서 기능이 동일한 컴포넌트는 일관되게 식별된다.
@@ -364,7 +367,8 @@ target 속성을 사용하여 자동 팝업 대신 새 창으로 열릴 것이�
 ```
 
 사례
-+ []()
++ [하나은행 로그인 페이지](https://www.kebhana.com/common/login.do)에서 로그인을 하려고 할 때, 보안 프로그램이 설치가 필요한 경우 설치화면으로 이동한다는 메세지를 주고, 확인 버튼을 눌러야 이동하게끔 되어있다.
+  ![3.2.5 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/04_team/Understandable/assets/3_2_5_ex01.png)
 
 ## 3.3 Input Assistance
 사용자가 실수를 피하고 바로잡을 수 있게 돕는다.
@@ -447,7 +451,8 @@ Please re-enter the value.');" />
 ```
 
 사례
-+ []()
++ [네이버 회원가입 페이지](https://nid.naver.com/user2/V2Join?token_sjoin=65g3bc0DoiWreVk0&langSelect=ko_KR&chk_all=on&termsService=on&termsPrivacy=on&termsLocation=Y&termsEmail=Y)에서 비밀번호 입력과 비밀번호 확인 입력 요소에 aria-describedby 속성을 이용하여 필드 누락으로 양식 제출이 실패했음을 메세지로 알려주고 있다.
+  ![3.3.1 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/04_team/Understandable/assets/3_3_1_ex01.png)
 
 
 ### 3.3.2 Labels or Instructions
@@ -483,7 +488,7 @@ aria-labelledby 속성을 사용하여 의미 있는 레이블이 둘 이상의 
 </form>
 ``` 
   
-aria-lablledby 속성뿐 아니라 role 속성을 통해 양식 내 관련 컨트롤 집합을 그룹으로 표시할 수 있다. 사용자 인터페이스 디자인을 인해 fieldset-legend 기술을 사용하기 어려울 때 양식 컨트롤을 프로그래밍 방식으로 그룹화하는 대안이다.
+aria-labelledby 속성뿐 아니라 role 속성을 통해 양식 내 관련 컨트롤 집합을 그룹으로 표시할 수 있다. 사용자 인터페이스 디자인을 인해 fieldset-legend 기술을 사용하기 어려울 때 양식 컨트롤을 프로그래밍 방식으로 그룹화하는 대안이다.
 ```html
 <div role="group" aria-labelledby="ssn1">
    <span id="ssn1">Social Security#</span> 
@@ -494,36 +499,124 @@ aria-lablledby 속성뿐 아니라 role 속성을 통해 양식 내 관련 컨�
 </div>
 ```
 사례
-+ []()
++ [레진코믹스](https://www.lezhin.com/ko)의 경우 작품 검색 항목에서 aria-labelledby 속성을 이용하여 텍스트 입력 요소를 연결하고 있다.
+  ![3.3.2 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/04_team/Understandable/assets/3_3_2_ex01.png)
 
 ### 3.3.3 Error Suggestion
 > (Level AA) 입력 오류가 자동으로 감지되고 이를 정정하기 위한 추천 항목이 있다면 그 추천 항목이 콘텐츠의 보안이나 목적을 위태롭게 하지 않는 한 이를 사용자에게 제공한다.
 
 목적
++ 이는 입력 오류가 있을 시, 해당 오류를 수정하기 위한 적절한 제안을 받도록 해야함을 의미한다.
++ 오류 알림을 제공하더라도 인지 한계가 있는 사람들은 오류를 수정하는 방법을 이해하기 어려울 수 있고, 시각 장애인의 경우 오류를 수정하는 방법을 정확히 파악하지 못할 수 있기 때문에 오류에 대한 설명을 제공해야 한다.
+  
 이점
-적용방법
-사례
++ 학습 장애가 있는 사람들, 시각장애가 있는 사람들이 입력 오류의 특성과 수정 방법을 더 쉽게 이해할 수 있다.
++ 동적 장애가 있는 사람들은 입력 값을 변경하는 데 필요한 횟수를 줄일 수 있다.
+  
+적용방법  
+필수 양식 필드에 입력이 없다면 어디가 비었는지 알 수 있도록 텍스트로 정보를 제공하는 방법이 있다. title화면 판독기 사용자는 페이지가 올바르게 제출되었다고 생각하고 새 페이지가 반환되는 즉시 다른 페이지로 계속 이동하기 때문에 페이지 제목에 오류 알림을 포함하는 것이 좋다.
 
+필수 양식 필드에 aria-required 속성을 ture로 주어 해당 부분을 작성하지 않았을 시, 필수 항목이 빠졌다는 오류 메세지를 발생시킬 수도 있다.
+```html
+<form action="#" method="post" id="step1" onsubmit="return errorCheck2()">
+  <p>
+    <label for="fname">First name: </label>
+    <input type="text" id="fname" aria-required="true" />
+    [required]
+  </p>
+  <p>
+    <label for="mname">Middle name: </label>
+    <input type="text" id="mname" />
+  </p>
+  <p>
+    <label for="lname">Last name: </label>
+    <input type="text" id="lname" aria-required="true" />
+    [required]
+  </p>
+  <p>
+    <label for="email">Email address: </label>
+    <input type="text" id="email" aria-required="true" />
+    [required]
+  </p>
+  <p>
+    <label for="zip_post">Zip / Postal code: </label>
+    <input type="text" id="zip_post" size="6" aria-required="true" />
+    [required]
+  </p>
+  <p>
+    <input type="submit" value="Next Step" id="step_btn" name="step_btn" />
+  </p>
+</form> 
+```
+  
+aria-alertdialog 속성을 사용하여 잘못된 정보를 입력한 사람에게 알림으로 알려줄 수도 있다.
+```html
+<div role="alertdialog" aria-labelledby="alertHeading" aria-describedby="alertText">
+<h1 id="alertHeading">Error</h1>
+<div id="alertText">Employee's Birth Date is after their hire date. Please verify the birth date and hire date.</div>
+<button>Save and Continue</button>
+<button>Return to page and correct error</button>
+</div>
+```
+  
+입력의 형식, 값 및 유형에 대한 제한이 있을 때, 사용자가 제공한 정보가 허용되지 않고 가능한 올바른 텍스트가 있는 경우, 올바른 텍스트를 제공할 수도 있다.
+
+사례
++ [레진코믹스](https://www.lezhin.com/ko)의 경우 레진 패스 결제 시, role="alertdialog"를 통해 해당 결제 항목에 대한 정보를 제공한다. 
+  ![3.3.3 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/04_team/Understandable/assets/3_3_3_ex01.png)
+  
 ### 3.3.4 Error Prevention(Legal, Financial, Data)
 > (Level AA) 사용자에 대한 법적 책임이나 금융 거래가 발생하는 웹 사이트가 데이터 스토리지 시스템에서 사용자가 제어할 수 있는 데이터를 수정 또는 삭제하거나 사용자 테스트 응답을 제출하는 경우, 다음 중 하나 이상을 만족한다.
 > + 복원 가능(Reversible): 제출 내용을 복원할 수 있다.
 > + 점검(Checked): 사용자가 입력한 데이터에 입력 오류가 있는 지 점검하고 오류를 수정할 수 있는 기회를 사용자에게 제공한다.
 > + 확인(Confirmed): 제출을 완료하기 전엔 정보를 검토, 확인, 수정하는 메커니즘을 이용할 수 있다.
 
-목적
+목적  
++ 이는 장애가 있는 사람들이 환불 불가 항공권구매, 중개 계좌에서 주식 구매 등 되돌릴 수 없는 작업을 수행할 때, 실수로 인한 심각한 결과를 피할 수 있도록 하기 위함이다.
+
 이점
++ 실수할 가능성이 더 큰 모든 장애가 있는 사람들이 실수로 인한 심각한 결과를 방지하기 위해 보호 장치를 제공할 수 있다.
+   
 적용방법
+온라인 쇼핑 시, 주문이 제출되면 사용자가 주문의 정확성을 검사할 수 있도록 주문 항목, 각 주문 항목의 수량, 배송지 주소 및 결제 방법등을 포함한 주문정보를 표시하여 사용자가 주문을 확인하거나 변경할 수 있도록 하는 것처럼 정보를 제공하는 방법이 있다.
+온라인 뱅킹에서 입금처 및 입금 금액 등 거래에 대한 요약이 제공되는 것도 같은 이치이다.
+  
+결제 및 거래 전 체크 박스를 선택하도록 하여 해당 체크 박스를 선택했을 시 결제 및 거래가 진행되도록 할 수도 있다. 이때, 이 체크 박스를 선택하면 어떤 일이 발생하는 지에 대한 설명이 필요하다.
+
 사례
++ [알라딘](https://www.aladin.co.kr/home/welcome.aspx)을 비롯한 많은 쇼핑몰에서 결제 후 결제에 대한 정보를 보여 주어 입력한 정보를 조회, 변경, 취소 가능하도록 기능을 제공하고 있다.
+  ![3.3.4 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/04_team/Understandable/assets/3_3_4_ex01.png)
 
 
 ### 3.3.5 Help
 > (Level AAA) 상황에 맞는 도움말(context-sensitive help)을 이용할 수 있다.
 
 목적  
-이는 
-이점
-적용방법
-사례
++ 이는 사용자가 실수를 하지 않도록 돕기 위한 것이다. 
++ 일부 장애가 있는 사람들은 장애가 없는 사람들보다 실수를 할 가능성이 더 높기 떄문에 상황에 맞는 도움말을 사용하여 수행중인 작업을 추적하지 않고 작업을 수행하는 방법을 알려줘야 한다.
++ 레이블이 모든 기능을 설명하기에 충분하지 않은 경우에만 제공하면 되며 필요할 때마다 분명하게 얻을 수 있어야 한다.
+  
+이점  
+아래와 같은 사람들을 돕는다.
++ 텍스트 입력이 필요한 양식에 텍스트를 작성하는데 종종 어려움을 겪는 읽기 및 지적 장애가 있는 사람들
++ 쓰기 장애가 있는 사람들
++ 노화로 인해 텍스트 입력 및 마우스 조작에 동일한 어려움이 있는 사람들
+   
+적용방법  
+온라인 입사 지원의 경우, 일부 질문은 새로운 구직자가 이해하기 어려울 수 있다. 이때 각 질문 옆에 있는 도움말 링크가 각 질문에 대한 지침과 설명을 제공하는 방법이 있다. 아래와 같이 도움말 링크를 통해 스크린 리더 사용자가 입력 양식 컨트롤과 상호작용할 때, 해당 링크에 접근할 수 있도록 한다.
+```html
+<form action="test.html">
+  <label for="test">Test control
+  <a href="help.html" target="_blank">Help</a></label>
+  <input type="text" name="test" id="test" />
+</form>
+```
+  
+양식 제출이 필요할 때, 양식 상단에 "날짜는 mm/dd/yyyy 형식으로 입력해야합니다." 등의 텍스트 메세지를 미리 제공하여 설명할 수도 있다.
+  
+사례  
++ [구글 회원가입 페이지](https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fwww.google.com%2F%3Fhl%3Dko&hl=ko&gmb=exp&biz=false&flowName=GlifWebSignIn&flowEntry=SignUp)를 보면, 이 이메일이 본인 소유인지 확인해야합니다. 라는 메세지나 문자,숫자,기호를 조합하여 8자 이상을 사용하세요. 등 입력 요소의 양식을 텍스트 메세지를 통해 제공하고 있다.
+  ![3.3.5 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/04_team/Understandable/assets/3_3_5_ex01.png)
 
 ### 3.3.6 Error Prevention(All)
 > (Level AAA) 사용자가 정보를 제출해야 하는 웹 페이지의 경우 다음 중 하나 이상을 만족한다.
@@ -532,6 +625,13 @@ aria-lablledby 속성뿐 아니라 role 속성을 통해 양식 내 관련 컨�
 > + 확인(Confirmed): 제출을 완료하기 전에 정보를 검토, 확인, 수정하는 메커니즘을 이용할 수 있다.
 
 목적  
-이점
-적용방법
-사례
++ 이는 장애가 있는 사람들이 양식 데이터를 제출할 때, 실수로 인해 발생할 수 있는 결과를 피할 수 있도록 돕기 위함이다. 
++ 이 기준은 위의 3.3.4를 기반으로 한다.
++ 장애가 있는 사람들은 실수할 가능성이 더 높고, 실수를 감지하거나 복구하기에 어려울 수 있다.
++ 이때 복원 기능, 점검 기능, 확인 기능을 제공하면 사용자가 실수를 감지할 수 있다.
+
+이점  
++ 실수로 인한 결과를 방지하기 위한 보호 장치로, 실수할 가능성이 큰 모든 장애가 있는 사람들에게 도움이 된다.
+
+적용방법  
+3.3.4를 기반으로 하여, 3.3.4를 참고.
