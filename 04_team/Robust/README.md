@@ -22,7 +22,7 @@
 
 사례
 + [chorome web developer](https://chrispederick.com/work/web-developer/)를 사용하여 HTML 및 XML, CSS의 유효성 검사를 진행할 수 있다.
-    ![4.1.1 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/04_team/Robust/assets/4_1_1_ex01.png)
+    ![4.1.1 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/04_team/Robust/assets/4_1_1_ex01.PNG)
 
 
 ### 4.1.2 Name, Role, Value
@@ -90,7 +90,7 @@ iframe 요소 사용시, title 요소를 추가하여 해당 iframe이 어떤 �
 ```
 사례
 + [네이버 메인 화면](www.naver.com)을 보면 banner인 부분은 role = banner 로, main인 부분은 role = main으로 구성 요소에 대한 역할을 확실하게 한 것을 볼 수 있다. 또한 iframe 요소의 경우 title로 쇼핑캐스트를 주어 해당 iframe이 어떤 용도인지 확실하게 알려준다. 
-    ![4.1.2 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/04_team/Robust/assets/4_1_2_ex01.png)
+    ![4.1.2 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/04_team/Robust/assets/4_1_2_ex01.PNG)
 
 ### 4.1.3 Status Messages
 > (Level AA) 마크업 언어로 구현된 컨텐츠에서 상태 메시지는 역할이나 속성을 통해 프로그래밍 방식으로 확인할 수 있으므로 포커스를 받지 않고 보조 기술로 사용자에게 제공할 수 있다.
@@ -107,4 +107,4 @@ role 속성에 alert를 주어 컨터이너에 오류 메세지를 삽입하는 
 
 사례
 + [네이버 로그인 페이지](https://nid.naver.com/nidlogin.login)에서 로그인이 실패했을 때  나오는 가입하지 않은 아이디이거나, 잘못된 비밀번호 입니다. 메세지는 aria-live = "assertive" 속성을 가지고 삽입되어 해당 메세지에 포커스가 가지 않은 상태로 해당 메세지를 전달하고 있다.
-  ![4.1.3 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/04_team/Robust/assets/4_1_3_ex01.png)
+  ![4.1.3 example 01](https://github.com/HyunJungC-Dev/WCAG/blob/main/04_team/Robust/assets/4_1_3_ex01.PNG)
