@@ -171,7 +171,7 @@
 ### (4)텍스트 이미지 지양: 로고 타입과 같이 필수적인 경우를 제외하고 텍스트 이미지보다 텍스트를 통해 정보를 전달해야 합니다.
 
 - [구글 메인페이지의 로고]
-- ![image](http://ojsfile.ohmynews.com/PHT_IMG_FILE/2018/1113/IE002420105_PHT.jpg)
+- ![image](https://lh3.googleusercontent.com/proxy/SB5WLZOro6I22OnYclTjW9TW0OIVKeL2ds_975-ESyQXAKeIWazG1oP81Natz6EYuT76RbPPaiAJ7GrWUVmEeU-djlZg8Tu9UjI5-1QS3BqRyq-SSr9SU_E01JAn_xn2mdYdYWHtz7j22Oo6o1MnfuwaTw1Pp26HiVc4vPXiFp8yhwAeQBBRc-KYJcYRRQpJxvcI2XwkqZ64YTQZ8yyOikkqqfysxWdwG5qQCqtbTrJI-cRP32JTgR39BqwAo5FnEGVbsLR8aExspxDGHjMiJLAU0LT3vox5CQX3RlWJTYrQnNa7oo2I)
 
 ### (5)재배치: 2차원 레이아웃으로 되어있는 부분을 재배치하여 스크롤을 하지 않고도 콘텐츠를 표현할 수 있습니다.
 
