@@ -57,12 +57,7 @@
       <td headers="co1 c1">James Phillips</td>
       <td headers="co2 c1">Marie Beauchamp</td>
       ```
-
-  - 네이버 로그인 페이지
-    - `<form>`에서 각 checkbox의 label은 보조 기술에 의해 프로그래밍 방식으로 결정될 수 있다.
-    - `로그인 상태 유지` checkbox에 tab을 통해 이동할 수 있고, space bar를 통해 체크 및 체크 해제가 가능하다.  
-      <img src="./assets/naver_login_page_131.png" width="550">
-
+      
 ### 1.3.2 Meaningful Sequence
 
 > (의미 있는 순서) 콘텐츠를 표현하는 순서가 콘텐츠의 의미에 영향을 준다면 정확한 읽기 순서를 프로그래밍 방식으로 확인할 수 있어야 한다.
@@ -108,7 +103,7 @@
 > (입력 목적 확인) 사용자에 관한 정보를 수집하는 각 입력 필드의 목적은 다음과 같은 경우 프로그래밍 방식으로 결정한다.
 
 - 입력 필드를 [Input Purposes for User Interface Components section](https://www.w3.org/TR/WCAG21/#input-purposes)에서 확인된 목적에 따라 사용하는 경우
-- 콘텐츠가 서식 입력 이터의 예상할 수 있는 의미를 식별할 수 있도록 지원하는 기법을 사용하여 실행하는 경우
+- 콘텐츠가 서식 입력 데이터의 예상할 수 있는 의미를 식별할 수 있도록 지원하는 기법을 사용하여 실행하는 경우
 
 - 이 기준은 사용자 정보 입력 필드의 용도를 구체적으로 명시하여 쉽게 `autocomplete`할 수 있도록 돕는다.
 - 프로그램으로 결정한다는 것은 보조기기가 해석 가능한 방식으로 마크업한다는 것을 의미한다. 유저 에이전트와 보조기기는 [Input Purposes for User Interface Components section](https://www.w3.org/TR/WCAG21/#input-purposes)에 명시한 것만 해석할 수 있다.
